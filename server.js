@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Connect to MongoDB 
-mongoose.connect('mongodb://localhost/ebook_db', { 
+mongoose.connect('YOUR_DB_URI', { 
     useNewUrlParser: true, 
     useUnifiedTopology: true 
 })
@@ -41,7 +41,7 @@ const upload = multer({ storage: storage });
 // Middleware
 app.use(express.json());
 
-// API endpoints - with enhanced error handling and validation
+// API endpoints - with error handling and validation
 
 // Create a new book
 app.post('/books', 
