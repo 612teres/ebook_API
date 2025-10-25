@@ -7,9 +7,10 @@ const { debugPort } = require('process');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const DB = process.env.MONGO_URI;
 
 // Connect to MongoDB 
-mongoose.connect('YOUR_DB_URI', { 
+mongoose.connect( DB, { 
     useNewUrlParser: true, 
     useUnifiedTopology: true 
 })
