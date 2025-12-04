@@ -8,7 +8,7 @@ A RESTful API for managing eBooks, built with Node.js, Express, and MongoDB.
 - Store eBook metadata (title, author, ISBN, etc.).
 - Handle file uploads and downloads for eBook content and cover images.
 - Basic input validation and error handling.
-- (Optional) User authentication and authorization (not yet implemented).
+- User authentication and authorization (not yet implemented).
 
 ## Getting Started
 
